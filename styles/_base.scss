@@ -1,0 +1,9 @@
+@use "variables" as *;
+
+* {
+    padding: 0;
+    font-family: $text-heading, sans-serif;
+    color:white;
+    background-color: $color-primary;
+}
+

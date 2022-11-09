@@ -1,2 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Source+Sans+Pro&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Source+Sans+Pro&display=swap");
+* {
+  padding: 0;
+  font-family: "Inter", sans-serif, sans-serif;
+  color: white;
+  background-color: rgb(75, 38, 75);
+}
 
+footer {
+  display: flex;
+  flex-direction: column;
+  height: 10vh;
+  width: 100vw;
+  border: solid green;
+  background-color: black;
+}
+footer p {
+  display: flex;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=styles.css.map */

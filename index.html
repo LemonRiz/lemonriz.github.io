@@ -1,72 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mehdi Rizvi</title>
-    <link rel="stylesheet" href="./styles/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
     <header class="NavBar">
-        <nav>
-            <a>Mehdi Rizvi</a>
-            <a>Home</a>
-            <a>About</a>
-            <a>Projects</a>
-            <a>Get in Touch!</a>
-        </nav>
+      <nav>
+        <a href="">Mehdi Rizvi</a>
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Projects</a>
+        <a><button>Get in Touch!</button></a>
+      </nav>
     </header>
     <main>
-        <section id="intro">
-            <h1>It's me, Mehdi!</h1>
-            <p>A Junior Cloud Technician based in the UK.</p>
-        </section>
+      <section id="intro">
+        <div class="introduction">
+          <p class="introduction__p">It's me, Mehdi! 🤓</p>
+          <h1 class="introduction__h1">
+            A Junior Cloud Technician based in the UK.
+          </h1>
+        </div>
+      </section>
 
-        <section id="about">
-            <h1>About Me</h1>
-            <img src="fart.png">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget pulvinar sem, sit amet molestie nisi. 
-                Fusce pulvinar at purus et ullamcorper. Nunc dolor eros, imperdiet eget euismod ac, pellentesque ut felis. 
-                Nunc dictum egestas metus, a congue nisi posuere sit amet. Donec semper dapibus metus, quis vestibulum lacus malesuada eget. 
-                Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus in mi vitae metus venenatis fringilla.
-            </p>
-            <p>
-                Etiam eu luctus nisi. Pellentesque porta nunc id augue aliquet, ut ornare metus consectetur. 
-                Integer posuere massa eu justo fringilla, eget scelerisque mauris tempor. Aenean sed nisi ornare, volutpat ante ac, pulvinar erat. 
-                Curabitur finibus sem leo, quis volutpat lacus porta eget. 
-                Sed et est molestie ex venenatis blandit. In fringilla vulputate varius. 
-            </p>
-        </section>
-        
-        <section id="skills">
-            <h1>Technical Skills</h1>
-            <p>
-                Maecenas accumsan tincidunt id et in ut diam sit. 
-                Metus, nec, augue urna gravida nisl, tortor sapien nec sollicitudin.
-            </p>
-                <div class="TechSkills">
-                    <img class="TechSkills__pic"src="./images/html5.png">
-                    <img src="./images/css.png">
-                    <img src="./images/bem.png">
-                    <img src="./images/sass.png">
-                    <img src="/images/git.png">
-                    <img src="./images/react.png">
-                    <img src="./images/java.png">
-                    <img src="./images/js.png">
-                    <img src="./images/springboot.png">
-            </div>
-        </section>
+      <section id="about" class="about">
+        <h1 class="about__h1">About Me</h1>
+        <img class="about__img" src="./images/rizv.jpg" />
+        <p class="about__p">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget
+          pulvinar sem, sit amet molestie nisi. Fusce pulvinar at purus et
+          ullamcorper. Nunc dolor eros, imperdiet eget euismod ac, pellentesque
+          ut felis. Nunc dictum egestas metus, a congue nisi posuere sit amet.
+          Donec semper dapibus metus, quis vestibulum lacus malesuada eget. Orci
+          varius natoque penatibus et magnis dis parturient montes, nascetur
+          ridiculus mus. Vivamus in mi vitae metus venenatis fringilla.
+        </p>
+        <p class="about__p">
+          Etiam eu luctus nisi. Pellentesque porta nunc id augue aliquet, ut
+          ornare metus consectetur. Integer posuere massa eu justo fringilla,
+          eget scelerisque mauris tempor. Aenean sed nisi ornare, volutpat ante
+          ac, pulvinar erat. Curabitur finibus sem leo, quis volutpat lacus
+          porta eget. Sed et est molestie ex venenatis blandit. In fringilla
+          vulputate varius.
+        </p>
+      </section>
 
-        <section id="projects">
-            <h1>My Projects</h1>
+      <section id="skills" class="skills">
+        <h1 class="skills__h1">Technical Skills</h1>
+        <p class="skills__p">
+          Maecenas accumsan tincidunt id et in ut diam sit. Metus, nec, augue
+          urna gravida nisl, tortor sapien nec sollicitudin.
+        </p>
+        <div class="TechSkills">
+          <img class="TechSkills__pic" src="./images/html5.png" />
+          <img class="TechSkills__pic" src="./images/css.png" />
+          <img class="TechSkills__pic" src="./images/bem.png" />
+          <img class="TechSkills__pic" src="./images/sass.png" />
+          <img class="TechSkills__pic" src="/images/git.png" />
+          <img class="TechSkills__pic" src="./images/react.png" />
+          <img class="TechSkills__pic" src="./images/java.png" />
+          <img class="TechSkills__pic" src="./images/js.png" />
+          <img class="TechSkills__pic" src="./images/springboot.png" />
+        </div>
+      </section>
 
-        </section>
+      <section id="projects" class="projects">
+        <h1 class="projects__h1">My Projects</h1>
+        <img src="placeholder" />
+        <p class="projects__title">REACT</p>
+        <h3 class="projects__h3">Client Project</h3>
+        <p class="projects__p">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tempus
+          tincidunt efficitur. Ut iaculis feugiat neque, eu feugiat elit aliquam
+          quis. Donec at cursus arcu. Praesent a sem massa. Donec sodales enim
+          in hendrerit sodales. Quisque volutpat, ex id faucibus aliquet, tellus
+          massa pellentesque lectus, at egestas risus massa quis nunc. Maecenas
+          dictum orci id mauris euismod maximus. Praesent felis ipsum, commodo
+          mollis nibh non, pretium condimentum diam. Maecenas ultrices magna
+          nisl, sed varius arcu venenatis eu. Integer sed elementum lacus, ut
+          pretium ex.
+        </p>
+      </section>
 
-        <footer>
-                <p>95.m.rizvi@gmail.com</p>
-        </footer>
+      <footer class="footer">
+        <p class="footer__p">95.m.rizvi@gmail.com</p>
+      </footer>
     </main>
-</body>
+  </body>
 </html>

@@ -44,12 +44,25 @@ nav {
 .skills__h1 {
   align-self: center;
 }
+.skills__p {
+  text-align: center;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+}
+.projects__bcode .projects__bpreview {
+  display: flex;
+  flex-direction: row;
+  border-radius: 5%;
+}
 
 footer {
   display: flex;
   flex-direction: column;
   height: 10vh;
-  width: 100vw;
+  width: 100%;
   border: solid 2px green;
   background-color: black;
 }

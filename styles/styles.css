@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Source+Sans+Pro&display=swap");
+* {
+  padding: 0;
+  font-family: "Inter", sans-serif, sans-serif;
+  color: white;
+  background-color: rgb(75, 38, 75);
+  box-sizing: border-box;
+}
+
+.introduction {
+  border: 2px solid green;
+}
+.introduction__h1 {
+  font-size: 4rem;
+}
+
+nav {
+  display: none;
+}
+
+.introduction__p {
+  font-size: 20px;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  border: solid 2px green;
+}
+.about__h1 {
+  align-self: center;
+}
+.about__img {
+  align-self: center;
+  width: 70vw;
+  border-radius: 5%;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  border: solid 2px green;
+}
+.skills__h1 {
+  align-self: center;
+}
+.skills__p {
+  text-align: center;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+}
+.projects__bcode .projects__bpreview {
+  display: flex;
+  flex-direction: row;
+  border-radius: 5%;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  height: 10vh;
+  width: 100%;
+  border: solid 2px green;
+  background-color: black;
+}
+footer p {
+  display: flex;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=styles.css.map */

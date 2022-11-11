@@ -81,19 +81,6 @@ nav {
   display: flex;
   flex-direction: column;
 
-  // REPLACED THIS WITH ".projects__card"
-  // &__h1,
-  // &__image,
-  // &__title,
-  // &__h3,
-  // &__p,
-  // &__bcode,
-  // &__bpreview {
-  //   &--desktop {
-  //     display: none;
-  //   }
-  // }
-
   &__bcode,
   &__bpreview {
     border-radius: 5%;
@@ -102,6 +89,19 @@ nav {
     padding: 0.5rem 0.5rem;
   }
 }
+
+// REPLACED THIS WITH ".projects__card"
+// &__h1,
+// &__image,
+// &__title,
+// &__h3,
+// &__p,
+// &__bcode,
+// &__bpreview {
+//   &--desktop {
+//     display: none;
+//   }
+// }
 
 .projects {
   display: flex;

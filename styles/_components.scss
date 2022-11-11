@@ -25,6 +25,11 @@ nav {
     width: 70vw;
     border-radius: 5%;
   }
+  &__riz {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .skills {

@@ -40,6 +40,11 @@ nav {
   width: 70vw;
   border-radius: 5%;
 }
+.about__riz {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .skills {
   display: flex;

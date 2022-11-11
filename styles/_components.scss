@@ -150,13 +150,6 @@ footer {
     display: flex;
   }
 
-  .navBar {
-    display: flex;
-    &__right {
-      align-items: flex-end;
-    }
-  }
-
   .projects {
     &__bcode,
     &__bpreview {

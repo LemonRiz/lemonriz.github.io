@@ -131,12 +131,6 @@ footer ul {
   nav {
     display: flex;
   }
-  .navBar {
-    display: flex;
-  }
-  .navBar__right {
-    align-items: flex-end;
-  }
   .projects__bcode--desktop, .projects__bpreview--desktop {
     border-radius: 5%;
     background-color: white;

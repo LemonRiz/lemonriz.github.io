@@ -101,6 +101,9 @@ nav {
   padding: 0.5rem 0.5rem;
 }
 
+.projects {
+  display: flex;
+}
 .projects__card--desktop {
   display: none;
 }
@@ -158,13 +161,43 @@ footer ul {
   nav .navBar__name {
     font-weight: bold;
     font-size: 1.5rem;
+    padding: 10%;
   }
   .introduction {
-    border: 2px green solid;
     display: flex;
+    padding-left: 10%;
+    align-items: center;
+  }
+  .introduction__text {
+    flex-direction: column;
+    text-align: left;
+  }
+  .introduction__h1 {
+    font-size: 5.9rem;
   }
   .introduction__boy {
     display: block;
+  }
+  .about {
+    display: flex;
+    border: solid 2px green;
+  }
+  .about__h1 {
+    align-self: center;
+    text-align: left;
+  }
+  .about__flex {
+    display: flex;
+  }
+  .about__p {
+    align-items: center;
+    text-align: left;
+  }
+  .about__img {
+    align-self: flex-start;
+    width: 25vw;
+    margin: 3rem;
+    border-radius: 5%;
   }
   .projects__bcode--desktop, .projects__bpreview--desktop {
     border-radius: 5%;

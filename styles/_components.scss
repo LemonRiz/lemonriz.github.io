@@ -104,6 +104,7 @@ nav {
 }
 
 .projects {
+  display: flex;
   &__card {
     &--desktop {
       display: none;
@@ -163,15 +164,47 @@ footer {
       &__name {
         font-weight: bold;
         font-size: 1.5rem;
+        padding: 10%;
       }
     }
   }
 
   .introduction {
-    border: 2px green solid;
+    // border: 2px green solid;
     display: flex;
+    padding-left: 10%;
+    align-items: center;
+    &__text {
+      flex-direction: column;
+      text-align: left;
+    }
+    &__h1 {
+      font-size: 5.9rem;
+    }
     &__boy {
       display: block;
+    }
+  }
+
+  .about {
+    display: flex;
+    border: solid 2px green;
+    &__h1 {
+      align-self: center;
+      text-align: left;
+    }
+    &__flex {
+      display: flex;
+    }
+    &__p {
+      align-items: center;
+      text-align: left;
+    }
+    &__img {
+      align-self: flex-start;
+      width: 25vw;
+      margin: 3rem;
+      border-radius: 5%;
     }
   }
 

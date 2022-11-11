@@ -70,8 +70,12 @@ nav {
   }
 }
 
-.desktop-content {
-  display: none;
+.projects {
+  &__card {
+    &--desktop {
+      display: none;
+    }
+  }
 }
 
 footer {
@@ -93,7 +97,11 @@ footer {
   .NavBar {
     display: block;
   }
-  .desktop-content {
-    display: block;
+  .projects {
+    &__card {
+      &--desktop {
+        display: block;
+      }
+    }
   }
 }

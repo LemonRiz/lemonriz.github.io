@@ -58,7 +58,7 @@ nav {
   border-radius: 5%;
 }
 
-.desktop-content {
+.projects__card--desktop {
   display: none;
 }
 
@@ -81,7 +81,7 @@ footer p {
   .NavBar {
     display: block;
   }
-  .desktop-content {
+  .projects__card--desktop {
     display: block;
   }
 }/*# sourceMappingURL=styles.css.map */

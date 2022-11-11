@@ -37,6 +37,7 @@ nav {
 .skills {
   display: flex;
   flex-direction: column;
+  align-items: center;
   border: solid 2px green;
   &__h1 {
     align-self: center;
@@ -46,11 +47,48 @@ nav {
   }
 }
 
+.techSkills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 0.5rem;
+  text-align: center;
+
+  &__grid1 {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  &__grid2 {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  &__grid3 {
+    grid-area: 1 / 3 / 2 / 4;
+  }
+  &__grid4 {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  &__grid5 {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+  &__grid6 {
+    grid-area: 2 / 3 / 3 / 4;
+  }
+  &__grid7 {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+  &__grid8 {
+    grid-area: 3 / 2 / 4 / 3;
+  }
+  &__grid9 {
+    grid-area: 3 / 3 / 4 / 4;
+  }
+}
+
 .projects {
   display: flex;
   flex-direction: column;
 
-  // REPLACED THIS WITH ".desktop-content"
+  // REPLACED THIS WITH ".projects__card"
   // &__h1,
   // &__image,
   // &__title,
@@ -63,10 +101,12 @@ nav {
   //   }
   // }
 
-  &__bcode &__bpreview {
-    display: flex;
-    flex-direction: row;
+  &__bcode,
+  &__bpreview {
     border-radius: 5%;
+    background-color: $color-button;
+    color: $color-footer;
+    padding: 0.5rem 0.5rem;
   }
 }
 
@@ -91,13 +131,43 @@ footer {
     align-items: center;
     justify-content: center;
   }
+  &__connects {
+    background-color: $color-footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  ul {
+    background-color: $color-footer;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+  }
 }
 
-@media screen and (min-width: $desktop-breakpoint) {
-  .NavBar {
-    display: block;
+@media only screen and (min-width: $desktop-breakpoint) {
+  nav {
+    display: flex;
   }
+
+  .navBar {
+    display: flex;
+    &__right {
+      align-items: flex-end;
+    }
+  }
+
   .projects {
+    &__bcode,
+    &__bpreview {
+      &--desktop {
+        border-radius: 5%;
+        background-color: $color-button;
+        color: $color-footer;
+        padding: 0.5rem 0.5rem;
+      }
+    }
+
     &__card {
       &--desktop {
         display: block;

@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
-    <header class="NavBar">
+    <header class="navBar">
       <nav>
         <a href="">Mehdi Rizvi</a>
-        <a href="">Home</a>
-        <a href="">About</a>
-        <a href="">Projects</a>
-        <a><button>Get in Touch!</button></a>
+        <a class="navBar__right" href="">Home </a>
+        <a class="navBar__right" href="">About </a>
+        <a class="navBar__right" href="">Projects </a>
+        <a class="navBar__right"><button>Get in Touch!</button></a>
       </nav>
     </header>
     <main>
@@ -55,16 +55,43 @@
           Maecenas accumsan tincidunt id et in ut diam sit. Metus, nec, augue
           urna gravida nisl, tortor sapien nec sollicitudin.
         </p>
-        <div class="TechSkills">
-          <img class="TechSkills__pic" src="./images/html5.png" />
-          <img class="TechSkills__pic" src="./images/css.png" />
-          <img class="TechSkills__pic" src="./images/bem.png" />
-          <img class="TechSkills__pic" src="./images/sass.png" />
-          <img class="TechSkills__pic" src="/images/git.png" />
-          <img class="TechSkills__pic" src="./images/react.png" />
-          <img class="TechSkills__pic" src="./images/java.png" />
-          <img class="TechSkills__pic" src="./images/js.png" />
-          <img class="TechSkills__pic" src="./images/springboot.png" />
+        <div class="techSkills">
+          <div class="techSkills__grid1">
+            <img class="TechSkills__pic" src="./images/html5.png" />
+            <p>HTML5</p>
+          </div>
+          <div class="techSkills__grid2">
+            <img class="techSkills__pic" src="./images/css.png" />
+            <p>CSS3</p>
+          </div>
+          <div class="techSkills__grid3">
+            <img class="techSkills__pic" src="./images/bem.png" />
+            <p>BEM</p>
+          </div>
+          <div class="techSkills__grid4">
+            <img class="techSkills__pic" src="./images/sass.png" />
+            <p>SCSS</p>
+          </div>
+          <div class="techSkills__grid5">
+            <img class="techSkills__pic" src="/images/git.png" />
+            <p>GIT</p>
+          </div>
+          <div class="techSkills__grid6">
+            <img class="techSkills__pic" src="./images/react.png" />
+            <p>React</p>
+          </div>
+          <div class="techSkills__grid7">
+            <img class="techSkills__pic" src="./images/java.png" />
+            <p>Java</p>
+          </div>
+          <div class="techSkills__grid8">
+            <img class="techSkills__pic" src="./images/js.png" />
+            <p>JavaScript</p>
+          </div>
+          <div class="techSkills__grid9">
+            <img class="techSkills__pic" src="./images/springboot.png" />
+            <p>Springboot</p>
+          </div>
         </div>
       </section>
 
@@ -157,7 +184,17 @@
       <br />
       <br />
       <footer class="footer">
+        <div class="footer__connects">
+          <ul>
+            <li><img class="footer__img" src="/images/gitvector.png" /></li>
+            <li>
+              <img class="footer__img" src="/images/linkedin vector.png" />
+            </li>
+            <li><img class="footer__img" src="/images/cv vector.png" /></li>
+          </ul>
+        </div>
         <p class="footer__p">95.m.rizvi@gmail.com</p>
+        <br />
       </footer>
     </main>
   </body>

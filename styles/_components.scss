@@ -1,15 +1,5 @@
 @use "variables" as *;
 
-// .NavBar{
-//     display: none;
-// }
-
-// @media screen and (min-width: $desktop-breakpoint) {
-//     .NavBar{
-//         display: block;
-//     }
-// }
-
 nav {
   display: none;
 }
@@ -17,6 +7,9 @@ nav {
 .introduction {
   &__p {
     font-size: 20px;
+  }
+  &__boy {
+    display: none;
   }
 }
 
@@ -147,7 +140,39 @@ footer {
 
 @media only screen and (min-width: $desktop-breakpoint) {
   nav {
+    height: 10vh;
     display: flex;
+    align-items: center;
+
+    a:first-child {
+      justify-content: flex-start;
+      margin-right: auto;
+    }
+    .navBar {
+      display: flex;
+      justify-content: space-evenly;
+      &__button {
+        border-radius: 5%;
+        background-color: $color-button;
+        color: $color-footer;
+        padding: 0.5rem 0.5rem;
+      }
+      &__right {
+        padding: 2rem;
+      }
+      &__name {
+        font-weight: bold;
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .introduction {
+    border: 2px green solid;
+    display: flex;
+    &__boy {
+      display: block;
+    }
   }
 
   .projects {

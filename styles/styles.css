@@ -7,11 +7,13 @@
   box-sizing: border-box;
 }
 
-.introduction {
-  border: 2px solid green;
-}
 .introduction__h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
 }
 
 nav {
@@ -20,6 +22,9 @@ nav {
 
 .introduction__p {
   font-size: 20px;
+}
+.introduction__boy {
+  display: none;
 }
 
 .about {
@@ -129,7 +134,37 @@ footer ul {
 
 @media only screen and (min-width: 1024px) {
   nav {
+    height: 10vh;
     display: flex;
+    align-items: center;
+  }
+  nav a:first-child {
+    justify-content: flex-start;
+    margin-right: auto;
+  }
+  nav .navBar {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  nav .navBar__button {
+    border-radius: 5%;
+    background-color: white;
+    color: black;
+    padding: 0.5rem 0.5rem;
+  }
+  nav .navBar__right {
+    padding: 2rem;
+  }
+  nav .navBar__name {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  .introduction {
+    border: 2px green solid;
+    display: flex;
+  }
+  .introduction__boy {
+    display: block;
   }
   .projects__bcode--desktop, .projects__bpreview--desktop {
     border-radius: 5%;

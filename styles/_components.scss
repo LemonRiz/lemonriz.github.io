@@ -136,11 +136,25 @@ footer {
     justify-content: center;
     align-items: center;
   }
+  li {
+    background-color: white;
+  }
   ul {
     background-color: $color-footer;
     display: flex;
     justify-content: space-evenly;
     list-style: none;
+  }
+}
+.socials {
+  background-color: $color-footer;
+  &__connects {
+    background-color: $color-footer;
+  }
+  &__img {
+    background-color: $color-button;
+    border-radius: 100%;
+    border: $color-button;
   }
 }
 
@@ -197,6 +211,7 @@ footer {
     &__h1 {
       align-self: center;
       text-align: left;
+      font-size: 4rem;
     }
     &__flex {
       display: flex;
@@ -204,6 +219,7 @@ footer {
     &__p {
       align-items: center;
       text-align: left;
+      font-size: 1.6rem;
     }
     &__img {
       align-self: flex-start;
@@ -213,20 +229,30 @@ footer {
     }
   }
 
+  .skills {
+    &__p {font-size: 1.5rem;}
+  }
+
   .projects {
+    border: solid 2px green;
+    &__card {
+      &--desktop {
+        display: block;
+      }
+    }
+    display: grid;
+    grid-template-areas:
+      "projects__proj1 projects__proj2 projects__proj3"
+      "projects__proj4 projects__proj5 projects__proj6";
+
     &__bcode,
     &__bpreview {
       &--desktop {
+        display: grid;
         border-radius: 5%;
         background-color: $color-button;
         color: $color-footer;
         padding: 0.5rem 0.5rem;
-      }
-    }
-
-    &__card {
-      &--desktop {
-        display: block;
       }
     }
   }

@@ -133,11 +133,26 @@ footer__connects {
   justify-content: center;
   align-items: center;
 }
+footer li {
+  background-color: white;
+}
 footer ul {
   background-color: black;
   display: flex;
   justify-content: space-evenly;
   list-style: none;
+}
+
+.socials {
+  background-color: black;
+}
+.socials__connects {
+  background-color: black;
+}
+.socials__img {
+  background-color: white;
+  border-radius: 100%;
+  border: white;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -190,6 +205,7 @@ footer ul {
   .about__h1 {
     align-self: center;
     text-align: left;
+    font-size: 4rem;
   }
   .about__flex {
     display: flex;
@@ -197,6 +213,7 @@ footer ul {
   .about__p {
     align-items: center;
     text-align: left;
+    font-size: 1.6rem;
   }
   .about__img {
     align-self: flex-start;
@@ -204,13 +221,22 @@ footer ul {
     margin: 3rem;
     border-radius: 5%;
   }
+  .skills__p {
+    font-size: 1.5rem;
+  }
+  .projects {
+    border: solid 2px green;
+    display: grid;
+    grid-template-areas: "projects__proj1 projects__proj2 projects__proj3" "projects__proj4 projects__proj5 projects__proj6";
+  }
+  .projects__card--desktop {
+    display: block;
+  }
   .projects__bcode--desktop, .projects__bpreview--desktop {
+    display: grid;
     border-radius: 5%;
     background-color: white;
     color: black;
     padding: 0.5rem 0.5rem;
-  }
-  .projects__card--desktop {
-    display: block;
   }
 }/*# sourceMappingURL=styles.css.map */

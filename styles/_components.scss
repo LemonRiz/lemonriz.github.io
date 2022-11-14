@@ -108,15 +108,6 @@ nav {
 //   }
 // }
 
-.projects {
-  display: flex;
-  &__card {
-    &--desktop {
-      display: none;
-    }
-  }
-}
-
 footer {
   display: flex;
   flex-direction: column;
@@ -230,30 +221,58 @@ footer {
   }
 
   .skills {
-    &__p {font-size: 1.5rem;}
+    &__p {
+      font-size: 1.5rem;
+    }
+  }
+  .techSkills {
+    display: flex;
   }
 
   .projects {
+    display: grid;
     border: solid 2px green;
     &__card {
-      &--desktop {
-        display: block;
-      }
-    }
-    display: grid;
-    grid-template-areas:
-      "projects__proj1 projects__proj2 projects__proj3"
-      "projects__proj4 projects__proj5 projects__proj6";
+      &--desktop{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-column-gap: 15px;
+      grid-row-gap: 15px;
 
-    &__bcode,
-    &__bpreview {
-      &--desktop {
-        display: grid;
-        border-radius: 5%;
-        background-color: $color-button;
-        color: $color-footer;
-        padding: 0.5rem 0.5rem;
+      &__proj1 {
+        grid-area: 1 / 1 / 2 / 2;
+      }
+      &__proj2 {
+        grid-area: 1 / 2 / 2 / 3;
+      }
+      &__proj3 {
+        grid-area: 1 / 3 / 2 / 4;
+      }
+      &__proj4 {
+        grid-area: 2 / 1 / 3 / 2;
+      }
+      &__proj5 {
+        grid-area: 2 / 2 / 3 / 3;
+      }
+      &__proj6 {
+        grid-area: 2 / 3 / 3 / 4;
       }
     }
   }
+  &__bcode,
+  &__bpreview {
+    &--desktop {
+      border-radius: 5%;
+      background-color: $color-button;
+      color: $color-footer;
+      padding: 0.5rem 0.5rem;
+    }
+  }
+  &__image {
+    &--desktop {
+      border: aqua solid 3px;
+    }
+  }
+}
 }

@@ -106,13 +106,6 @@ nav {
   padding: 0.5rem 0.5rem;
 }
 
-.projects {
-  display: flex;
-}
-.projects__card--desktop {
-  display: none;
-}
-
 footer {
   display: flex;
   flex-direction: column;
@@ -224,19 +217,45 @@ footer ul {
   .skills__p {
     font-size: 1.5rem;
   }
+  .techSkills {
+    display: flex;
+  }
   .projects {
-    border: solid 2px green;
     display: grid;
-    grid-template-areas: "projects__proj1 projects__proj2 projects__proj3" "projects__proj4 projects__proj5 projects__proj6";
+    border: solid 2px green;
   }
   .projects__card--desktop {
-    display: block;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+  }
+  .projects__card--desktop__proj1 {
+    grid-area: 1/1/2/2;
+  }
+  .projects__card--desktop__proj2 {
+    grid-area: 1/2/2/3;
+  }
+  .projects__card--desktop__proj3 {
+    grid-area: 1/3/2/4;
+  }
+  .projects__card--desktop__proj4 {
+    grid-area: 2/1/3/2;
+  }
+  .projects__card--desktop__proj5 {
+    grid-area: 2/2/3/3;
+  }
+  .projects__card--desktop__proj6 {
+    grid-area: 2/3/3/4;
   }
   .projects__bcode--desktop, .projects__bpreview--desktop {
-    display: grid;
     border-radius: 5%;
     background-color: white;
     color: black;
     padding: 0.5rem 0.5rem;
+  }
+  .projects__image--desktop {
+    border: aqua solid 3px;
   }
 }/*# sourceMappingURL=styles.css.map */

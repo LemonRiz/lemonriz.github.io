@@ -3,7 +3,7 @@
   padding: 0;
   font-family: "Inter", sans-serif, sans-serif;
   color: white;
-  background-color: rgb(75, 38, 75);
+  background-color: #446382;
   box-sizing: border-box;
 }
 
@@ -105,13 +105,22 @@ nav {
   color: black;
   padding: 0.5rem 0.5rem;
 }
+.projects__image {
+  border: solid 1rem #826f8d;
+  border-radius: 15%;
+}
+.projects__card {
+  background-color: red;
+}
+.projects__card--desktop {
+  display: none;
+}
 
 footer {
   display: flex;
   flex-direction: column;
   height: 10vh;
   width: 100%;
-  border: solid 2px green;
   background-color: black;
 }
 footer p {
@@ -256,6 +265,7 @@ footer ul {
     padding: 0.5rem 0.5rem;
   }
   .projects__image--desktop {
-    border: aqua solid 3px;
+    border: solid 1rem #826f8d;
+    border-radius: 15%;
   }
 }/*# sourceMappingURL=styles.css.map */

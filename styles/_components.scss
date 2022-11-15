@@ -255,15 +255,7 @@ footer {
         display: block;
       }
     }
-    &__bcode,
-    &__bpreview {
-      &--desktop {
-        border-radius: 5%;
-        background-color: $color-button;
-        color: $color-footer;
-        padding: 0.5rem 0.5rem;
-      }
-    }
+
     &__image {
       &--desktop {
         border: solid 1rem $color-project;

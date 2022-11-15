@@ -16,6 +16,14 @@ a:visited {
   text-decoration: none;
 }
 
+.butbase {
+  border-radius: 5%;
+  background-color: white;
+  color: black;
+  padding: 0.5rem 0.5rem;
+  outline: none;
+}
+
 nav {
   display: none;
 }
@@ -242,12 +250,6 @@ footer ul {
   .projects__card--desktop, .projects__card--mobile {
     padding: 2rem;
     display: block;
-  }
-  .projects__bcode--desktop, .projects__bpreview--desktop {
-    border-radius: 5%;
-    background-color: white;
-    color: black;
-    padding: 0.5rem 0.5rem;
   }
   .projects__image--desktop {
     border: solid 1rem #826f8d;

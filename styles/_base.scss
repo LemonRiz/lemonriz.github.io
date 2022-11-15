@@ -18,3 +18,11 @@ a:link,
 a:visited {
   text-decoration: none;
 }
+
+.butbase {
+  border-radius: 5%;
+  background-color: $color-button;
+  color: $color-footer;
+  padding: 0.5rem 0.5rem;
+  outline: none;
+}

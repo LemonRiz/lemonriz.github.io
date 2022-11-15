@@ -240,34 +240,19 @@ footer {
   }
 
   .projects {
-    display: grid;
     border: solid 2px green;
-    &__card {
-      &--desktop {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 15px;
-        grid-row-gap: 15px;
 
-        &__proj1 {
-          grid-area: 1 / 1 / 2 / 2;
-        }
-        &__proj2 {
-          grid-area: 1 / 2 / 2 / 3;
-        }
-        &__proj3 {
-          grid-area: 1 / 3 / 2 / 4;
-        }
-        &__proj4 {
-          grid-area: 2 / 1 / 3 / 2;
-        }
-        &__proj5 {
-          grid-area: 2 / 2 / 3 / 3;
-        }
-        &__proj6 {
-          grid-area: 2 / 3 / 3 / 4;
-        }
+    &__card {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-column-gap: 15px;
+      grid-row-gap: 15px;
+
+      &--desktop,
+      &--mobile {
+        padding: 2rem;
+        display: block;
       }
     }
     &__bcode,
@@ -283,6 +268,33 @@ footer {
       &--desktop {
         border: solid 1rem $color-project;
         border-radius: 15%;
+      }
+    }
+
+    .ProjGrid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-column-gap: 15px;
+      grid-row-gap: 15px;
+
+      .proj1 {
+        grid-area: 1 / 1 / 2 / 2;
+      }
+      .proj2 {
+        grid-area: 1 / 2 / 2 / 3;
+      }
+      .proj3 {
+        grid-area: 2 / 1 / 3 / 2;
+      }
+      .proj4 {
+        grid-area: 2 / 2 / 3 / 3;
+      }
+      .proj5 {
+        grid-area: 3 / 1 / 4 / 2;
+      }
+      .proj6 {
+        grid-area: 3 / 2 / 4 / 3;
       }
     }
   }

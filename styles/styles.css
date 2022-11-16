@@ -38,7 +38,6 @@ nav {
 .about {
   display: flex;
   flex-direction: column;
-  border: solid 2px green;
 }
 .about__h1 {
   align-self: center;
@@ -58,7 +57,6 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: solid 2px green;
 }
 .skills__h1 {
   align-self: center;
@@ -107,6 +105,9 @@ nav {
   display: flex;
   flex-direction: column;
 }
+.projects__proj1, .projects__proj2 {
+  margin-bottom: 1rem;
+}
 .projects__bcode, .projects__bpreview {
   border-radius: 5%;
   background-color: white;
@@ -118,6 +119,7 @@ nav {
   border-radius: 15%;
 }
 .projects__card {
+  margin: 1rem;
   background-color: red;
 }
 .projects__card--desktop {
@@ -145,6 +147,7 @@ footer__connects {
 }
 footer li {
   background-color: white;
+  border-radius: 100%;
 }
 footer ul {
   background-color: black;
@@ -160,9 +163,9 @@ footer ul {
   background-color: black;
 }
 .socials__img {
-  background-color: white;
-  border-radius: 100%;
   border: white;
+  background: none;
+  margin: 10px;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -210,7 +213,6 @@ footer ul {
   }
   .about {
     display: flex;
-    border: solid 2px green;
   }
   .about__h1 {
     align-self: center;
@@ -237,9 +239,6 @@ footer ul {
   .techSkills {
     display: flex;
   }
-  .projects {
-    border: solid 2px green;
-  }
   .projects__card {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -259,8 +258,8 @@ footer ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 15px;
-    grid-row-gap: 15px;
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
   }
   .projects .ProjGrid .proj1 {
     grid-area: 1/1/2/2;
@@ -279,5 +278,21 @@ footer ul {
   }
   .projects .ProjGrid .proj6 {
     grid-area: 3/2/4/3;
+  }
+  .socials__connects {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+  }
+  .socials__links {
+    background: black;
+    justify-content: space-evenly;
+  }
+  .socials__img {
+    margin: 10px;
+    justify-content: space-evenly;
+  }
+  .socials__p {
+    align-items: flex-start;
   }
 }/*# sourceMappingURL=styles.css.map */

@@ -16,7 +16,7 @@ nav {
 .about {
   display: flex;
   flex-direction: column;
-  border: solid 2px green;
+  // border: solid 2px green;
   &__h1 {
     align-self: center;
   }
@@ -36,7 +36,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: solid 2px green;
+  // border: solid 2px green;
   &__h1 {
     align-self: center;
   }
@@ -85,6 +85,10 @@ nav {
 .projects {
   display: flex;
   flex-direction: column;
+  &__proj1,
+  &__proj2 {
+    margin-bottom: 1rem;
+  }
 
   &__bcode,
   &__bpreview {
@@ -98,6 +102,7 @@ nav {
     border-radius: 15%;
   }
   &__card {
+    margin: 1rem;
     background-color: red;
     &--desktop {
       display: none;
@@ -139,6 +144,7 @@ footer {
   }
   li {
     background-color: white;
+    border-radius: 100%;
   }
   ul {
     background-color: $color-footer;
@@ -153,9 +159,9 @@ footer {
     background-color: $color-footer;
   }
   &__img {
-    background-color: $color-button;
-    border-radius: 100%;
     border: $color-button;
+    background: none;
+    margin: 10px;
   }
 }
 
@@ -208,7 +214,7 @@ footer {
 
   .about {
     display: flex;
-    border: solid 2px green;
+    // border: solid 2px green;
     &__h1 {
       align-self: center;
       text-align: left;
@@ -240,7 +246,7 @@ footer {
   }
 
   .projects {
-    border: solid 2px green;
+    // border: solid 2px green;
 
     &__card {
       display: grid;
@@ -267,8 +273,8 @@ footer {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(3, 1fr);
-      grid-column-gap: 15px;
-      grid-row-gap: 15px;
+      grid-column-gap: 25px;
+      grid-row-gap: 25px;
 
       .proj1 {
         grid-area: 1 / 1 / 2 / 2;
@@ -288,6 +294,26 @@ footer {
       .proj6 {
         grid-area: 3 / 2 / 4 / 3;
       }
+    }
+  }
+  .socials {
+    &__connects {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-evenly;
+    }
+    &__links {
+      background: black;
+      justify-content: space-evenly;
+    }
+    &__img {
+      margin: 10px;
+      justify-content: space-evenly;
+    }
+    &__p {
+      align-items: flex-start;
+    }
+    &__ul {
     }
   }
 }
